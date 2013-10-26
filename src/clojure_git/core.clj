@@ -45,3 +45,11 @@
        )
 
   )
+
+(use 'clodiuno.core 'clodiuno.firmata)
+
+(def board (arduino :firmata "/dev/tty.usbmodemfd121"))
+(pin-mode board 13 OUTPUT)
+
+(digital-write board 13 HIGH)
+(digital-write board 13 LOW)

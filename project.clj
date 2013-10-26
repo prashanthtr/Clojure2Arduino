@@ -5,8 +5,12 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [com.keminglabs/c2 "0.2.3"]
-                 [vrepl "1.1.1"]
+                 [clodiuno "0.0.2-SNAPSHOT"]
+                 ;[vrepl "1.1.1"]
                  ]
-  :min-lein-version "2.0.0"
-  :main vrepl.main
-)
+  :native-dependencies [[org.clojars.nakkaya/rxtx-macosx-native-deps "2.1.7"]]
+  :dev-dependencies [[native-deps "1.0.5"]]
+  ;:min-lein-version "2.0.0"
+  ;:main vrepl.main
+  :jvm-opts ["-d32"]
+  )

@@ -9,7 +9,7 @@
 
   (set [list '(1 2 3 4)]
 
-       (println list (map list inc))
+       (println list)
 
        )
 
